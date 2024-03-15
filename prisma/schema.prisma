@@ -18,7 +18,7 @@ model Developer {
   name       String
   gender     Gender
   hobby      String
-  birthdAt   DateTime
+  birthDate   DateTime
   createdAt  DateTime @default(now()) 
   updatedtAt DateTime @default(now())
 }
