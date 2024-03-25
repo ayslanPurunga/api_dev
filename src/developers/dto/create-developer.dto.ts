@@ -3,7 +3,6 @@ import {
   IsEnum,
   IsNotEmpty,
   IsString,
-  IsUppercase,
   MinLength,
 } from 'class-validator';
 import { Gender } from '../../enum/gender.enum';
@@ -14,7 +13,6 @@ export class CreateDeveloperDto {
   @IsString()
   name: string;
 
-  @IsUppercase()
   @IsEnum(Gender)
   gender: Gender;
 
