@@ -40,3 +40,8 @@ $ npx prisma migrate dev
 ```sh
 $ npm run start:dev
 ```
+
+## Open Swagger documentation:
+```sh
+http://localhost:port/api
+```
