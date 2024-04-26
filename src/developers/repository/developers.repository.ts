@@ -62,6 +62,14 @@ export class DevelopersRepository {
   async update(id: string, data: UpdateDeveloperDto) {
     await this.exists(id);
 
+    const genderUpperCase = data.gender.toUpperCase();
+
+    if (!Object.values(Gender).includes(genderUpperCase as Gender)) {
+      throw new BadRequestException('Valor inválido para o campo gender.');
+    }
+
+    data.gender = genderUpperCase as Gender;
+
     return await this.prisma.developer.update({
       data,
       where: {

@@ -2,5 +2,4 @@ export enum Gender {
   MASCULINO = 'MASCULINO',
   FEMININO = 'FEMININO',
   OUTROS = 'OUTROS',
-  NAO_INFORMADO = 'NAO_INFORMADO',
 }
