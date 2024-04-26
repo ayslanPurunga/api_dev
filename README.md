@@ -38,5 +38,5 @@ $ npx prisma migrate dev
 ## Start application:
 
 ```sh
-$ npm run dev
+$ npm run start:dev
 ```
